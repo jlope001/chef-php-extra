@@ -21,7 +21,6 @@ include_recipe "chef-php-extra::pear"
 
 channels = [
     "pear.symfony-project.com",
-    "pear.symfony.com",
     "components.ez.no",
 ]
 
@@ -31,7 +30,7 @@ channels.each do |chan|
   end
 end
 
-pu = chef_php_extra_pear_channel "pear.phpunit.de" do
+pu = chef_php_extra_pear_channel "pear.symfony.com" do
   action :discover
 end
 
