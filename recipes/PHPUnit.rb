@@ -21,7 +21,8 @@ include_recipe "chef-php-extra::pear"
 
 channels = [
     "pear.symfony-project.com",
-    "components.ez.no"
+    "pear.symfony.com",
+    "components.ez.no",
 ]
 
 channels.each do |chan|
